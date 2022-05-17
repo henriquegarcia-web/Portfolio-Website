@@ -13,7 +13,7 @@ const OnBoarding = () => {
           <S.Link href='mailto:henriquegarcia.dev@gmail.com' target='_blank'><I.FaEnvelope /></S.Link>
         </S.PersonalLinks>
         <S.PersonalDescription>
-          <h4>Olá 👋🏼 Eu sou o Henrique</h4>
+          <h3>Olá 👋🏼 Eu sou o Henrique</h3>
           <h2>Desenvolvedor <u>Front-End</u> React & React Native</h2>
         </S.PersonalDescription>
         <S.OnBoardingInputs>

@@ -51,8 +51,54 @@ export const Page = styled.div`
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  /* border-top: 1px solid #000;
+  border-bottom: 1px solid #000; */
   color: #000;
   /* background-color: #e6e6e6; */
+`
+
+export const ViewHeader = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 90px;
+
+  h4 {
+    margin: 0;
+    font-size: 24px;
+
+    color: ${props => props.theme.font_color};
+  }
+
+  .top_spacer {
+    height: 20px;
+    width: calc(100% - 18px);
+    margin-left: 18px;
+
+    border-left: 4px solid ${props => props.theme.font_color};
+  }
+`
+
+export const ViewHeaderIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+  font-size: 18px;
+
+  background-color: ${props => props.theme.elements_light};
+  color: ${props => props.theme.font_color};
+`
+
+export const ViewContent = styled.div`
+  display: flex;
+  height: calc(100% - 96px);
+  margin-top: 6px;
+  padding-left: 15px;
+  margin-left: 18px;
+
+  border-left: 4px solid ${props => props.theme.font_color};
 `

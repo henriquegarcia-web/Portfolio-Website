@@ -4,6 +4,7 @@ export const OnBoarding = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
+  max-width: 1000px;
   height: 100%;
 
   /* border: 2px solid red; */
@@ -39,16 +40,16 @@ export const Link = styled.a`
 
 export const PersonalDescription = styled.div`
   margin-bottom: 30px;
-  margin-left: 15px;
+  margin-left: 18px;
 
   color: ${props => props.theme.font_color};
 
-  h4 {
+  h3 {
     font-size: 44px;
     font-weight: 700;
     padding-left: 10px;
 
-    border-left: 5px solid ${props => props.theme.font_color};
+    border-left: 4px solid ${props => props.theme.font_color};
   }
 
   h2 {
@@ -56,7 +57,7 @@ export const PersonalDescription = styled.div`
     font-weight: 500;
     padding-left: 10px;
 
-    border-left: 5px solid ${props => props.theme.font_color};
+    border-left: 4px solid ${props => props.theme.font_color};
 
     u {
       text-decoration: underline;
