@@ -1,5 +1,6 @@
 import React from 'react'
 import * as S from './style'
+import * as I from 'react-icons/fi'
 
 import createScrollSnap from 'scroll-snap'
 
@@ -9,7 +10,7 @@ import MyKnowledge from './Views/MyKnowledge'
 import MyProjects from './Views/MyProjects'
 import Contact from './Views/Contact'
 
-const Home = () => {
+const Home = ({ themeToggler }) => {
 
   const container = React.createRef()
 
@@ -35,6 +36,15 @@ const Home = () => {
         <S.LastView><Contact /></S.LastView>
         
       </S.HomeScrollContainer>
+
+      <S.HomeSettings>
+        <S.LanguageChanger>
+          <I.FiGlobe />
+        </S.LanguageChanger>
+        <S.ThemeChanger onClick={themeToggler}>
+          <I.FiMoon />
+        </S.ThemeChanger>
+      </S.HomeSettings>
     </S.Home>
   )
 }

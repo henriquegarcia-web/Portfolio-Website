@@ -54,5 +54,5 @@ export const Page = styled.div`
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   color: #000;
-  background-color: #e6e6e6;
+  /* background-color: #e6e6e6; */
 `
