@@ -7,16 +7,10 @@ function App() {
       <Router>
         <Routes>
 
-        <Route path='/' exact element={<Home />} />
-        <Route path='/home' element={<Home />} />
+          <Route path='/' exact element={<Home />} />
+          <Route path='/home' element={<Home />} />
 
-        {/* <Route path='/login' element={} />
-        <Route path='/register' element={} />
-
-        <Route path='/manager' element={} />
-        <Route path='/upgrade' element={} />
-
-        <Route path='*' element={} /> */}
+          <Route path='*' element={<Home />} />
 
         </Routes>
       </Router>

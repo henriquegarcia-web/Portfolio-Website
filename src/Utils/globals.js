@@ -10,14 +10,11 @@ const GlobalStyle = createGlobalStyle`
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
     text-decoration: none;
+    flex-shrink: 0;
   }
 
   :root {
-    --theme-pink: #F20587;
-    --theme-soft-purple: #E4CEF2;
-    --theme-purple: #8C5CF2;
-    --theme-blue: #5E35F2;
-    --theme-black: #1D1E26;
+
   }
 
   // ------ SCROLL BAR
@@ -37,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
   }
 `
