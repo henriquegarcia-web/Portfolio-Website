@@ -48,7 +48,7 @@ export const HomeSettings = styled.div`
 `
 
 export const LanguageChanger = styled.div`
-  margin-right: 10px;
+  margin-right: 5px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -56,16 +56,18 @@ export const LanguageChanger = styled.div`
   height: 32px;
   width: 32px;
   border-radius: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: ${props => props.theme.elements_light};
   transition: .2s;
 
   svg {
     transition: .2s;
-    font-size: 18px;
+    font-size: 19px;
+
+    color: ${props => props.theme.font_color};
   }
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: ${props => props.theme.elements_dark};
   }
 `
 
