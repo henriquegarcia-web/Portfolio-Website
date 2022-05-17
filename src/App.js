@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import GlobalStyle from './Utils/globals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components';
 
@@ -16,6 +17,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <GlobalStyle />
+
       <Router>
         <Routes>
 

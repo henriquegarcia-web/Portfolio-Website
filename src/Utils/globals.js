@@ -37,6 +37,10 @@ const GlobalStyle = createGlobalStyle`
     background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
   }
+
+  span {
+    color: ${props => props.theme.variant};
+  }
 `
 
 export default GlobalStyle
@@ -62,13 +66,6 @@ export const ViewHeader = styled.div`
   flex-wrap: wrap;
   align-items: center;
   height: 90px;
-
-  h4 {
-    margin: 0;
-    font-size: 24px;
-
-    color: ${props => props.theme.font_color};
-  }
 
   .top_spacer {
     height: 20px;
@@ -101,4 +98,21 @@ export const ViewContent = styled.div`
   margin-left: 18px;
 
   border-left: 4px solid ${props => props.theme.font_color};
+`
+
+export const TextTitle = styled.h2`
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  color: ${props => props.theme.font_color};
+`
+
+export const TextSubtitle = styled.h3`
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+
+  color: ${props => props.theme.font_color};
 `

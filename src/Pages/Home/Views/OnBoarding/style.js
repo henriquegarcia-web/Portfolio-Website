@@ -48,6 +48,7 @@ export const PersonalDescription = styled.div`
     font-size: 44px;
     font-weight: 700;
     padding-left: 10px;
+    margin-bottom: 15px;
 
     border-left: 4px solid ${props => props.theme.font_color};
   }
