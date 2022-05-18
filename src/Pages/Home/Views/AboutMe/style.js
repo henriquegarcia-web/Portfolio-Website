@@ -124,22 +124,3 @@ export const HobbiesInfos = styled.div`
   display: flex;
   flex-wrap: wrap;
 `
-
-export const HobbiesTag = styled.div`
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  padding: 6px 12px;
-  border-radius: 50px;
-  margin: 0 10px 10px 0;
-
-  background-color: ${props => props.theme.elements_dark};
-  color: ${props => props.theme.font_color};
-
-  svg {
-    margin-right: 6px;
-    font-size: 16px;
-  }
-`

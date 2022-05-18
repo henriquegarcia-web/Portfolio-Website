@@ -8,7 +8,7 @@ const MyProjects = () => {
       <G.ViewHeader>
         <div className='top_spacer'></div>
         <G.ViewHeaderIcon>🗃</G.ViewHeaderIcon>
-        <h4>Meus projetos</h4>
+        <G.TextTitle>Meus projetos</G.TextTitle>
       </G.ViewHeader>
       <G.ViewContent>
         <S.MyProjectsContent>

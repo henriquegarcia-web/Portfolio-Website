@@ -8,10 +8,12 @@ const Contact = () => {
       <G.ViewHeader>
         <div className='top_spacer'></div>
         <G.ViewHeaderIcon>📱</G.ViewHeaderIcon>
-        <h4>Entre em contato</h4>
+        <G.TextTitle>Entre em contato</G.TextTitle>
       </G.ViewHeader>
       <G.ViewContent>
         <S.ContactContent>
+
+          
 
         </S.ContactContent>
       </G.ViewContent>

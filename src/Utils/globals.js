@@ -110,9 +110,38 @@ export const TextTitle = styled.h2`
 `
 
 export const TextSubtitle = styled.h3`
+  margin: 0;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.5px;
 
   color: ${props => props.theme.font_color};
+`
+
+// -------------------------------------- TAG
+
+export const Tag = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 4px 14px;
+  border-radius: 50px;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+  transition: .2s;
+
+  background-color: ${props => props.theme.elements_dark};
+  color: ${props => props.theme.font_color};
+
+  svg {
+    margin-right: 6px;
+    font-size: 15px;
+  }
+
+  &:hover {
+    /* transform: scale(1.06); */
+    background-color: ${props => props.theme.elements_light};
+  }
 `

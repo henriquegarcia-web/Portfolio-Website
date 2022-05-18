@@ -93,7 +93,7 @@ export const HobbiesInfos = () => {
   return (
     <S.HobbiesInfos>
       {HobbiesTags.map(({ icon, tag }) => (
-        <S.HobbiesTag key={tag}>{icon}{tag}</S.HobbiesTag>
+        <G.Tag key={tag}>{icon}{tag}</G.Tag>
       ))}
     </S.HobbiesInfos>
   )
