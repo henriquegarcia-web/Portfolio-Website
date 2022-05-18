@@ -44,9 +44,15 @@ export const SkillsContainerHeader = styled.div`
   }
 
   b {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12px;
     margin-top: 4px;
+
+    color: ${props => props.theme.variant};
+
+    b {
+      font-weight: 600;
+    }
   }
 
   svg {
@@ -58,6 +64,7 @@ export const SkillsContainerHeader = styled.div`
 export const SkillsContainerWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  padding-left: 30px;
 `
 
 export const SkillItem = styled.div`

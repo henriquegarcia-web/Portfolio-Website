@@ -37,6 +37,7 @@ const MyKnowledge = () => {
   const LearningTechnologies = [
     {tag: 'TypeScript'},
     {tag: 'AJAX'},
+    {tag: 'Redux'},
     {tag: 'SQL'},
     {tag: 'Next.JS'},
     {tag: 'Docker'},
@@ -56,7 +57,7 @@ const MyKnowledge = () => {
 
           <S.SkillsContainer>
             <S.SkillsContainerHeader>
-              <G.TextSubtitle><I.FiGitPullRequest /><span>Competências fluentes <b>3 - 4 anos</b></span></G.TextSubtitle>
+              <G.TextSubtitle><I.FiGitPullRequest /><span>Competências fluentes <b><b>XP:</b> 2-4 anos</b></span></G.TextSubtitle>
             </S.SkillsContainerHeader>
             <S.SkillsContainerWrapper>
               {FluentSkills.map(({ tag }) => (
@@ -67,7 +68,7 @@ const MyKnowledge = () => {
 
           <S.SkillsContainer>
             <S.SkillsContainerHeader>
-              <G.TextSubtitle><I.FiGitMerge /><span>Competências avançadas <b>2 - 3 anos</b></span></G.TextSubtitle>
+              <G.TextSubtitle><I.FiGitMerge /><span>Competências avançadas <b><b>XP:</b> 1-2 anos</b></span></G.TextSubtitle>
             </S.SkillsContainerHeader>
             <S.SkillsContainerWrapper>
               {IntermediateSkills.map(({ tag }) => (
@@ -78,7 +79,7 @@ const MyKnowledge = () => {
 
           <S.SkillsContainer>
             <S.SkillsContainerHeader>
-              <G.TextSubtitle><I.FiGitBranch /><span>Competências intermediárias<b>1 - 2 anos</b></span></G.TextSubtitle>
+              <G.TextSubtitle><I.FiGitBranch /><span>Competências em desenvolvimento<b><b>XP:</b> Até 12 meses</b></span></G.TextSubtitle>
             </S.SkillsContainerHeader>
             <S.SkillsContainerWrapper>
               {LearningTechnologies.map(({ tag }) => (

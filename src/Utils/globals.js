@@ -41,6 +41,10 @@ const GlobalStyle = createGlobalStyle`
   span {
     color: ${props => props.theme.variant};
   }
+
+  a:hover {
+    cursor: alias;
+  }
 `
 
 export default GlobalStyle
@@ -72,7 +76,7 @@ export const ViewHeader = styled.div`
     width: calc(100% - 18px);
     margin-left: 18px;
 
-    border-left: 4px solid ${props => props.theme.font_color};
+    border-left: 4px solid ${props => props.theme.elements_light};
   }
 `
 
@@ -97,7 +101,7 @@ export const ViewContent = styled.div`
   padding-left: 15px;
   margin-left: 18px;
 
-  border-left: 4px solid ${props => props.theme.font_color};
+  border-left: 4px solid ${props => props.theme.elements_light};
 `
 
 export const TextTitle = styled.h2`
@@ -126,10 +130,10 @@ export const Tag = styled.div`
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.5px;
-  padding: 4px 14px;
+  padding: 6px 14px;
   border-radius: 50px;
-  margin: 0 10px 10px 0;
-  cursor: pointer;
+  margin: 0 8px 8px 0;
+  cursor: cell;
   transition: .2s;
 
   background-color: ${props => props.theme.elements_dark};

@@ -1,6 +1,7 @@
 import React from 'react'
 import * as G from '../../../../Utils/globals'
 import * as S from './style'
+import * as I from 'react-icons/fa'
 
 import ImgBmw from '../../../../Assets/MyProjects/BMW.png'
 import ImgDelivery from '../../../../Assets/MyProjects/DELIVERY.png'
@@ -66,8 +67,8 @@ const MyProjects = () => {
       behance: 'https://www.behance.net/gallery/143993811/Front-End-Lab',
       tags: [
         'React',
-        'Styled Components',
         'Firebase',
+        'MVP'
       ]
     },
     {
@@ -132,8 +133,8 @@ const MyProjects = () => {
               <S.ProjectDetails className='details'>
                 <S.ProjectTitle>{title}</S.ProjectTitle>
                 <S.ProjectLinks>
-                  <S.Link href={github} target='_blank'>GitHub</S.Link>
-                  <S.Link href={behance} target='_blank'>Behance</S.Link>
+                  <S.Link href={github} target='_blank'><I.FaGithub />GitHub</S.Link>
+                  <S.Link href={behance} target='_blank'><I.FaBehance />Behance</S.Link>
                 </S.ProjectLinks>
                 <S.ProjectTags>
                   {tags.map((tag) => (

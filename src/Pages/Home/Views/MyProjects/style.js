@@ -23,15 +23,16 @@ export const MyProjectsContent = styled.div`
 
 export const ProjectContainer = styled.div`
   position: relative;
+  cursor: pointer;
   
   &:hover {
     img {
-      filter: blur(3px);
-      opacity: 0.7;
+      filter: blur(5px);
+      opacity: 0.5;
     }
 
     .details {
-      display: flex;
+      opacity: 1;
     }
   }
 `
@@ -49,21 +50,21 @@ export const ProjectImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  cursor: pointer;
   transition: .2s;  
 `
 
 export const ProjectDetails = styled.div`
   z-index: 2;
   position: absolute;
-  display: none;
+  display: flex;
+  opacity: 0;
   flex-direction: column;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
   padding: 15px;
-  /* pointer-events: none; */
+  transition: .2s; 
 `
 
 export const ProjectTitle = styled.div`
@@ -81,15 +82,47 @@ export const ProjectLinks = styled.div`
 `
 
 export const Link = styled.a`
-  width: 50%;
+  display: flex;
+  align-items: center;
+  width: calc(50% -  7.5px);
   font-size: 13px;
   font-weight: 500;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transition: .2s; 
 
   color: ${props => props.theme.font_color};
+  background-color: ${props => props.theme.elements_light};
+
+  svg {
+    font-size: 16px;
+    margin-right: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  &:hover {
+    color: ${props => props.theme.font_color};
+    background-color: ${props => props.theme.elements_dark};
+    text-decoration: none;
+  }
+
+  &:nth-of-type(1) {
+    margin-right: 7.5px;
+  }
+
+  &:nth-of-type(2) {
+    margin-left: 7.5px;
+  }
 `
 
 export const ProjectTags = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: auto;
+
+  div {
+    padding: 3px 10px;
+    font-size: 12px;
+    margin: 0 6px 6px 0;
+  }
 `
