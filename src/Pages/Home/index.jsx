@@ -8,7 +8,7 @@ import OnBoarding from './Views/OnBoarding'
 import AboutMe from './Views/AboutMe'
 import MyKnowledge from './Views/MyKnowledge'
 import MyProjects from './Views/MyProjects'
-import Contact from './Views/Contact'
+import Thanks from './Views/Thanks'
 
 const Home = ({ themeToggler }) => {
 
@@ -33,7 +33,7 @@ const Home = ({ themeToggler }) => {
         <S.MiddleView><AboutMe /></S.MiddleView>
         <S.MiddleView><MyKnowledge /></S.MiddleView>
         <S.MiddleView><MyProjects /></S.MiddleView>
-        {/* <S.LastView><Contact /></S.LastView> */}
+        <S.LastView><Thanks /></S.LastView>
         
       </S.HomeScrollContainer>
 
