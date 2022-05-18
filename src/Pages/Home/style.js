@@ -26,6 +26,10 @@ export const FirstView = styled(Page)`
 export const MiddleView = styled(Page)`
   height: 90%;
   min-height: 90%;
+
+  &:nth-of-type(2), &:nth-of-type(4) {
+    background-color: ${props => props.theme.body_variant};
+  }
 `
 
 export const LastView = styled(Page)`

@@ -50,13 +50,30 @@ export const PersonalDescription = styled.div`
 
   color: ${props => props.theme.font_color};
 
+  @keyframes HandRotate {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(30deg); }
+    100% { transform: rotate(0deg); }
+  }
+
   h3 {
+    display: flex;
     font-size: 46px;
     font-weight: 800;
     padding-left: 10px;
     margin-bottom: 20px;
 
     border-left: 4px solid ${props => props.theme.font_color};
+
+    div {
+      /* transform: rotate(0); */
+      animation: HandRotate 1.5s linear infinite;
+      margin: 0 15px;
+    }
+
+    span {
+      margin-left: 15px;
+    }
   }
 
   h2 {
@@ -73,8 +90,6 @@ export const PersonalDescription = styled.div`
 `
 
 export const OnBoardingInputs = styled.div`
-
-
   button {
     font-size: 15px;
     padding: 6px 15px;
