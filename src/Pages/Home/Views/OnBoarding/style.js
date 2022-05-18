@@ -28,6 +28,8 @@ export const Link = styled.a`
   height: 40px;
   border-radius: 100%;
   margin-right: 10px;
+  cursor: pointer;
+  transition: .2s;
 
   background-color: ${props => props.theme.elements_dark};
 
@@ -35,6 +37,10 @@ export const Link = styled.a`
     font-size: 18px;
 
     color: ${props => props.theme.font_color};
+  }
+
+  &:hover {
+    background-color: ${props => props.theme.elements_light};
   }
 `
 
@@ -45,17 +51,17 @@ export const PersonalDescription = styled.div`
   color: ${props => props.theme.font_color};
 
   h3 {
-    font-size: 44px;
-    font-weight: 700;
+    font-size: 46px;
+    font-weight: 800;
     padding-left: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
     border-left: 4px solid ${props => props.theme.font_color};
   }
 
   h2 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
     padding-left: 10px;
 
     border-left: 4px solid ${props => props.theme.font_color};
@@ -73,8 +79,14 @@ export const OnBoardingInputs = styled.div`
     font-size: 15px;
     padding: 6px 15px;
     border-radius: 50px;
+    cursor: pointer;
+    transition: .2s;
 
     background-color: ${props => props.theme.elements_dark};
     color: ${props => props.theme.font_color};
+
+    &:hover {
+      background-color: ${props => props.theme.elements_light};
+    }
   }
 `

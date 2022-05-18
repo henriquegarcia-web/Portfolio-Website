@@ -18,7 +18,7 @@ export const MyProjectsContent = styled.div`
   grid-column-gap: 20px;
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 30px 15px 30px 15px;
 `
 
 export const ProjectContainer = styled.div`

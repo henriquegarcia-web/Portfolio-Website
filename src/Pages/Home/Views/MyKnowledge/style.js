@@ -17,7 +17,7 @@ export const MyKnowledgeContent = styled.div`
   /* align-items: center; */
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 30px 15px 15px 15px;
 `
 
 export const SkillsContainer = styled.div`

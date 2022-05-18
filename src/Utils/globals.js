@@ -141,7 +141,6 @@ export const Tag = styled.div`
   }
 
   &:hover {
-    /* transform: scale(1.06); */
     background-color: ${props => props.theme.elements_light};
   }
 `

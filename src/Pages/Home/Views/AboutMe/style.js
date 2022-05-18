@@ -17,7 +17,7 @@ export const AboutMeContent = styled.div`
   /* align-items: center; */
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 30px 15px 15px 15px;
 
   /* border: 1px solid orange; */
 `
@@ -30,9 +30,10 @@ export const MainText = styled.div`
   /* border: 2px solid orange; */
 
   p {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+    letter-spacing: 0.5px;
 
     color: ${props => props.theme.font_color};
   }
@@ -102,11 +103,11 @@ export const ContactInfo = styled.div`
   background-color: ${props => props.theme.body};
 
   b {
-    font-weight: 500;
+    font-weight: 600;
   }
 
   p {
-    font-weight: 300;
+    font-weight: 400;
 
     a {
       color: ${props => props.theme.variant};

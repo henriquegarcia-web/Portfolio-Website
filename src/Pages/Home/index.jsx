@@ -33,14 +33,14 @@ const Home = ({ themeToggler }) => {
         <S.MiddleView><AboutMe /></S.MiddleView>
         <S.MiddleView><MyKnowledge /></S.MiddleView>
         <S.MiddleView><MyProjects /></S.MiddleView>
-        <S.LastView><Contact /></S.LastView>
+        {/* <S.LastView><Contact /></S.LastView> */}
         
       </S.HomeScrollContainer>
 
       <S.HomeSettings>
-        <S.LanguageChanger>
+        {/* <S.LanguageChanger>
           <I.FiGlobe />
-        </S.LanguageChanger>
+        </S.LanguageChanger> */}
         <S.ThemeChanger onClick={themeToggler}>
           <I.FiMoon />
         </S.ThemeChanger>
