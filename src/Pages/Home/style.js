@@ -40,19 +40,58 @@ export const LastView = styled(Page)`
 // --------------------------------------- SETTINGS
 
 export const HomeSettings = styled.div`
+  z-index: 100;
   position: fixed;
-  right: 0;
+  left: 0;
+  top: 0;
   display: flex;
-  width: fit-content;
-  padding: 10px;
-  margin: 10px 20px 0 0;
-  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
 
-  /* border: 2px solid black; */
+  background-color: ${props => props.theme.body_variant};
 `
 
-export const LanguageChanger = styled.div`
-  margin-right: 5px;
+export const Logo = styled.div`
+  
+
+  h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: ${props => props.theme.font_color};
+  }
+`
+
+export const Menu = styled.div`
+  display: flex;
+
+  ul {
+    display: flex;
+    margin: 0;
+  
+    li {
+      display: flex;
+      margin-right: 15px;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+
+      color: ${props => props.theme.font_color};
+      
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+  }
+`
+
+export const ThemeChanger = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -73,8 +112,4 @@ export const LanguageChanger = styled.div`
   &:hover {
     background-color: ${props => props.theme.elements_dark};
   }
-`
-
-export const ThemeChanger = styled(LanguageChanger)`
-  margin-right: 0;
 `

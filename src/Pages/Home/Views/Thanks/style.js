@@ -19,11 +19,11 @@ export const ThanksText = styled.div`
   width: 50%;
 
   h2 {
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-align: right;
-    width: 70%;
+    width: 60%;
     margin: 0 20px 20px auto;
     padding-right: 15px;
 

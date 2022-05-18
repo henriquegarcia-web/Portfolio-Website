@@ -2,7 +2,7 @@ import React from 'react'
 import * as S from './style'
 import * as I from 'react-icons/fa'
 
-const OnBoarding = () => {
+const OnBoarding = ({ onBackClick }) => {
   return (
     <S.OnBoarding>
       <S.OnBoardingContainer>
@@ -17,7 +17,7 @@ const OnBoarding = () => {
           <h2>Desenvolvedor <u>Front-End</u> React & React Native</h2>
         </S.PersonalDescription>
         <S.OnBoardingInputs>
-          <button>+ Sobre mim</button>
+          <button onClick={onBackClick}>+ Sobre mim</button>
         </S.OnBoardingInputs>
       </S.OnBoardingContainer>
     </S.OnBoarding>

@@ -15,6 +15,9 @@ const AboutMe = () => {
         <S.AboutMeContent>
 
           <S.MainText>
+            <S.SectionHeader>
+              <G.TextSubtitle>Histórico como desenvolvedor</G.TextSubtitle>
+            </S.SectionHeader>
             <p>Sou um <span>desenvolvedor web & mobile</span> que adora programação e suas possibilidades.</p>
             <p>Comecei a programar em 2018, durante um <span>curso técnico em programação de jogos digitais</span>, onde aprendi programação C# e Unity 3D e ganhei conhecimento técnico de gerenciamento e documentação de projetos.</p>
             <p>Em 2020, conheci o <span>front-end</span> e tenho estado em constante evolução, acompanhando as tendências e atualizações da área. Iniciei no desenvolvimento front-end utilizando <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span> e atualmente sou desenvolvedor <span>React</span> e <span>React Native</span>.</p>

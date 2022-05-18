@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Lexend Deca', sans-serif;
     text-decoration: none;
     flex-shrink: 0;
+    user-select: none;
   }
 
   :root {
@@ -130,7 +131,7 @@ export const Tag = styled.div`
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.5px;
-  padding: 6px 14px;
+  padding: 5px 14px;
   border-radius: 50px;
   margin: 0 8px 8px 0;
   cursor: cell;

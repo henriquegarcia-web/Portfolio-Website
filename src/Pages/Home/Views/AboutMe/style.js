@@ -18,7 +18,7 @@ export const AboutMeContent = styled.div`
 
 export const MainText = styled.div`
   width: 100%;
-  height: 230px;
+  height: 260px;
   margin-bottom: 15px;
 
   p {
@@ -33,7 +33,7 @@ export const MainText = styled.div`
 
 export const AboutMeSections = styled.div`
   display: flex;
-  height: calc(100% - 245px);
+  height: calc(100% - 275px);
 `
 
 export const ContactSection = styled.div`
@@ -94,6 +94,7 @@ export const ContactInfo = styled.div`
 
   p {
     font-weight: 400;
+    user-select: text;
 
     a {
       color: ${props => props.theme.variant};

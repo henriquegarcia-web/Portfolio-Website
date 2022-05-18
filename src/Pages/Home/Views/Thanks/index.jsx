@@ -10,7 +10,7 @@ const Thanks = () => {
     <S.Thanks>
       <S.ThanksContainer>
         <S.ThanksText>
-          <h2>Obrigado pela sua visita!</h2>
+          <h2><span>Obrigado</span> pela visita!</h2>
           <S.PersonalLinks>
             <S.Link href='https://www.linkedin.com/in/henrique-p-garcia/' target='_blank'><I.FaLinkedinIn /></S.Link>
             <S.Link href='https://www.behance.net/henriquegarcia-dev' target='_blank'><I.FaBehance /></S.Link>

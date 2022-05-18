@@ -17,7 +17,7 @@ export const OnBoardingContainer = styled.div`
 
 export const PersonalLinks = styled.div`
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 `
 
 export const Link = styled.a`
@@ -45,7 +45,7 @@ export const Link = styled.a`
 `
 
 export const PersonalDescription = styled.div`
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   margin-left: 18px;
 
   color: ${props => props.theme.font_color};
@@ -85,6 +85,12 @@ export const PersonalDescription = styled.div`
 
     u {
       text-decoration: underline;
+      cursor: cell;
+      transition: 0.15s;
+
+      &:hover {
+        color: ${props => props.theme.variant};
+      }
     }
   }
 `

@@ -23,8 +23,11 @@ function App() {
       <Router>
         <Routes>
 
-          <Route path='/' exact element={<Home themeToggler={themeToggler} />} />
-          <Route path='/home' element={<Home themeToggler={themeToggler} />} />
+          <Route path='/' exact element={<Home themeToggler={themeToggler} activeView='home' />} />
+          <Route path='/home' element={<Home themeToggler={themeToggler} activeView='home' />} />
+          <Route path='/sobre-mim' element={<Home themeToggler={themeToggler} activeView='about_me' />} />
+          <Route path='/meus-conhecimentos' element={<Home themeToggler={themeToggler} activeView='my_knowledges' />} />
+          <Route path='/meus-projetos' element={<Home themeToggler={themeToggler} activeView='my_projects' />} />
 
           <Route path='*' element={<Home themeToggler={themeToggler} />} />
 

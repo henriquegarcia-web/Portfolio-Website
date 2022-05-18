@@ -125,8 +125,8 @@ const MyProjects = () => {
       <G.ViewContent>
         <S.MyProjectsContent>
 
-          {MyProjects.map(({ image, title, github, behance, tags, index }) => (
-            <S.ProjectContainer key={index}>
+          {MyProjects.map(({ image, title, github, behance, tags }) => (
+            <S.ProjectContainer key={title}>
               <S.ProjectImageContainer>
                 <S.ProjectImage src={image} alt={title} />
               </S.ProjectImageContainer>
