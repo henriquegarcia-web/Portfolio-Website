@@ -52,32 +52,22 @@ export default GlobalStyle
 
 // --------------------------------- COMPONENTES
 
-export const Page = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  /* border-top: 1px solid #000;
-  border-bottom: 1px solid #000; */
-  color: #000;
-  /* background-color: #e6e6e6; */
-`
-
 export const ViewHeader = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 90px;
+  height: 120px; // 100
+
+  /* border: 1px solid red; */
 
   .top_spacer {
-    height: 20px;
+    height: 60px;
     width: calc(100% - 18px);
     margin-left: 18px;
 
     border-left: 4px solid ${props => props.theme.elements_light};
+
+    /* border: 1px solid orange; */
   }
 `
 
@@ -97,12 +87,26 @@ export const ViewHeaderIcon = styled.div`
 
 export const ViewContent = styled.div`
   display: flex;
-  height: calc(100% - 96px);
+  height: calc(100% - 126px); //
   margin-top: 6px;
   padding-left: 15px;
   margin-left: 18px;
 
   border-left: 4px solid ${props => props.theme.elements_light};
+`
+
+export const Page = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  /* border-top: 1px solid #000;
+  border-bottom: 1px solid #000; */
+  color: #000;
+  /* background-color: #e6e6e6; */
 `
 
 export const TextTitle = styled.h2`

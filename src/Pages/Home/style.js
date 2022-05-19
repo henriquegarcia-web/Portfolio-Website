@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Page } from '../../Utils/globals'
 
+import HomeBg from '../../Assets/HomeBg.png'
+
 export const Home = styled.div`
 
 `
@@ -15,7 +17,10 @@ export const HomeScrollContainer = styled.div`
   width: 100%;
   height: 100%;
 
-  background-color: ${props => props.theme.body};
+  /* background-color: ${props => props.theme.body}; */
+  background-image: url(${HomeBg});
+  background-size: cover;
+  background-position: center;
 `
 
 export const FirstView = styled(Page)`
