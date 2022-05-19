@@ -13,6 +13,7 @@ import Thanks from './Views/Thanks'
 const Home = ({ themeToggler, activeView }) => {
 
   const [currentView, setCurrentView] = useState('home')
+  const [menuOpen, setMenuOpen] = useState(false)
 
   // --------------------------------------------------
 
@@ -46,6 +47,7 @@ const Home = ({ themeToggler, activeView }) => {
     document.querySelector(`.${currentView}`).style.fontWeight = '700'
   }, [currentView])
   
+  // on
 
   return (
     <S.Home>
@@ -63,18 +65,32 @@ const Home = ({ themeToggler, activeView }) => {
         <S.Logo>
           <h1>Henrique P. Garcia</h1>
         </S.Logo>
-        <S.Menu>
+        <S.MenuDesktop>
           <ul>
             <li className='home' onClick={() => goToRef(homeRef, 'home')}>Início</li>
             <li className='about_me' onClick={() => goToRef(aboutMeRef, 'about_me')}>Sobre mim</li>
             <li className='my_know' onClick={() => goToRef(myKnowRef, 'my_know')}>Meus conhecimentos</li>
             <li className='my_projects' onClick={() => goToRef(myProjectsRef, 'my_projects')}>Meus projetos</li>
           </ul>
-        </S.Menu>
+        </S.MenuDesktop>
+        <S.MenuMobile onClick={() => setMenuOpen(!menuOpen)}>
+          <I.FiMenu />
+        </S.MenuMobile>
         <S.ThemeChanger onClick={themeToggler}>
           <I.FiMoon />
         </S.ThemeChanger>
       </S.HomeSettings>
+
+      <S.MobileMenu menuOpen={menuOpen}>
+        <S.MobileMenuContainer menuOpen={menuOpen}>
+          <ul>
+            <li className='home' onClick={() => goToRef(homeRef, 'home')}>Início</li>
+            <li className='about_me' onClick={() => goToRef(aboutMeRef, 'about_me')}>Sobre mim</li>
+            <li className='my_know' onClick={() => goToRef(myKnowRef, 'my_know')}>Meus conhecimentos</li>
+            <li className='my_projects' onClick={() => goToRef(myProjectsRef, 'my_projects')}>Meus projetos</li>
+          </ul>
+        </S.MobileMenuContainer>
+      </S.MobileMenu>
     </S.Home>
   )
 }

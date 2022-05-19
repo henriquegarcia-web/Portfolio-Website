@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     flex-shrink: 0;
     user-select: none;
+    transition: .2s;
   }
 
   :root {

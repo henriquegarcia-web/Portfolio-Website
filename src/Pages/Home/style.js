@@ -17,7 +17,6 @@ export const HomeScrollContainer = styled.div`
   width: 100%;
   height: 100%;
 
-  /* background-color: ${props => props.theme.body}; */
   background-image: url(${HomeBg});
   background-size: cover;
   background-position: center;
@@ -60,8 +59,6 @@ export const HomeSettings = styled.div`
 `
 
 export const Logo = styled.div`
-  
-
   h1 {
     margin: 0;
     font-size: 22px;
@@ -69,9 +66,15 @@ export const Logo = styled.div`
     letter-spacing: 0.5px;
     color: ${props => props.theme.font_color};
   }
+
+  @media screen and (max-width: 860px) {
+    h1 {
+      font-size: 20px;
+    }
+  }
 `
 
-export const Menu = styled.div`
+export const MenuDesktop = styled.div`
   display: flex;
 
   ul {
@@ -92,7 +95,18 @@ export const Menu = styled.div`
         margin-right: 0;
       }
     }
+  }
 
+  @media screen and (max-width: 860px) {
+    ul {
+      li {
+        font-size: 13px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    display: none;
   }
 `
 
@@ -116,5 +130,64 @@ export const ThemeChanger = styled.div`
 
   &:hover {
     background-color: ${props => props.theme.elements_dark};
+  }
+`
+
+export const MenuMobile = styled(ThemeChanger)`
+  display: none;
+  margin: 0 10px 0 auto;
+
+  @media screen and (max-width: 760px) {
+    display: flex;
+  }
+`
+
+// ---------------------------- MOBILE MENU
+
+export const MobileMenu = styled.div`
+  z-index: 90;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: ${props => props.menuOpen ? 'all' : 'none'};
+`
+
+export const MobileMenuContainer = styled.div`
+  position: absolute;
+  display: flex;
+  /* justify-content: space-between;
+  align-items: center; */
+  width: 300px;
+  height: 100%;
+  padding: 90px 20px 20px 20px;
+  transform: translateX(${props => props.menuOpen ? '0' : '100%'});
+
+  background-color: ${props => props.theme.body_variant};
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    li {
+      display: flex;
+      margin-bottom: 15px;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+
+      color: ${props => props.theme.font_color};
+      
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 `
