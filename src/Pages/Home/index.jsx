@@ -45,7 +45,9 @@ const Home = ({ themeToggler, activeView }) => {
   }
 
   useEffect(() => {
-    document.querySelector(`.${currentView}`).style.fontWeight = '700'
+    document.querySelectorAll(`.${currentView}`).forEach((element) => {
+      element.style.fontWeight = '700'
+    })
   }, [currentView])
   
   // on
@@ -91,9 +93,10 @@ const Home = ({ themeToggler, activeView }) => {
         <S.MobileMenuContainer menuOpen={menuOpen}>
           <ul>
             <li className='home' onClick={() => goToRef(homeRef, 'home')}>Início<I.FiHome /></li>
-            <li className='about_me' onClick={() => goToRef(aboutMeRef, 'about_me')}>Sobre mim<I.FiSmile /></li>
+            {/* <li className='about_me' onClick={() => goToRef(aboutMeRef, 'about_me')}>Sobre mim<I.FiSmile /></li>
             <li className='my_know' onClick={() => goToRef(myKnowRef, 'my_know')}>Meus conhecimentos<I.FiBook /></li>
-            <li className='my_projects' onClick={() => goToRef(myProjectsRef, 'my_projects')}>Meus projetos<I.FiPackage /></li>
+            <li className='my_projects' onClick={() => goToRef(myProjectsRef, 'my_projects')}>Meus projetos<I.FiPackage /></li> */}
+            <li className='thanks' onClick={() => goToRef(thanksRef, 'thanks')}>Agrandecimento<I.FiSmile /></li>
           </ul>
         </S.MobileMenuContainer>
       </S.MobileMenu>

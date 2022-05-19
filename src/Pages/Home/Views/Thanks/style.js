@@ -44,6 +44,7 @@ export const ThanksText = styled.div`
   }
 
   @media screen and (max-width: 760px) {
+    width: 100%;
     margin-bottom: 40px;
   }
 `
@@ -52,7 +53,9 @@ export const ThanksImage = styled.div`
   width: 50%;
 
   @media screen and (max-width: 760px) {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 `
 
