@@ -20,6 +20,16 @@ export const HomeScrollContainer = styled.div`
   background-image: url(${HomeBg});
   background-size: cover;
   background-position: center;
+
+  @media screen and (max-width: 760px) {
+    .view__about_me, .view__my_know, .view__my_projects {
+      display: none
+    }
+
+    .view__thanks {
+      background-color: ${props => props.theme.body_variant};
+    }
+  }
 `
 
 export const FirstView = styled(Page)`
@@ -155,14 +165,16 @@ export const MobileMenu = styled.div`
   height: 100%;
   overflow: hidden;
   pointer-events: ${props => props.menuOpen ? 'all' : 'none'};
+
+  @media screen and (min-width: 760px) {
+    pointer-events: none;
+  }
 `
 
 export const MobileMenuContainer = styled.div`
   position: absolute;
   display: flex;
-  /* justify-content: space-between;
-  align-items: center; */
-  width: 300px;
+  width: 230px;
   height: 100%;
   padding: 90px 20px 20px 20px;
   transform: translateX(${props => props.menuOpen ? '0' : '100%'});
@@ -172,11 +184,12 @@ export const MobileMenuContainer = styled.div`
   ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
 
     li {
       display: flex;
+      align-items: center;
       margin-bottom: 15px;
       font-size: 15px;
       font-weight: 400;
@@ -188,6 +201,15 @@ export const MobileMenuContainer = styled.div`
       &:last-of-type {
         margin-bottom: 0;
       }
+
+      svg {
+        font-size: 18px;
+        margin-left: 8px;
+      }
     }
+  }
+
+  @media screen and (min-width: 760px) {
+    transform: translateX(100%);
   }
 `

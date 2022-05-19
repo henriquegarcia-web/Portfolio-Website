@@ -40,6 +40,7 @@ const Home = ({ themeToggler, activeView }) => {
 
   function goToRef(ref, view) {
     ref.current.scrollIntoView({ behavior: 'smooth' })
+    if (!view || view === '') return
     setCurrentView(view)
   }
 
@@ -53,11 +54,16 @@ const Home = ({ themeToggler, activeView }) => {
     <S.Home>
       <S.HomeScrollContainer ref={container}>
 
-        <S.FirstView ref={homeRef}><OnBoarding onBackClick={() => goToRef(aboutMeRef, 'about_me')} /></S.FirstView>
-        <S.MiddleView ref={aboutMeRef}><AboutMe /></S.MiddleView>
-        <S.MiddleView ref={myKnowRef}><MyKnowledge /></S.MiddleView>
-        <S.MiddleView ref={myProjectsRef}><MyProjects /></S.MiddleView>
-        <S.LastView ref={thanksRef}><Thanks /></S.LastView>
+        <S.FirstView className='view__home' ref={homeRef}>
+          <OnBoarding 
+            onBackClick={() => goToRef(aboutMeRef, 'about_me')}
+            goToThanks={() => goToRef(thanksRef)} 
+          />
+        </S.FirstView>
+        <S.MiddleView className='view__about_me' ref={aboutMeRef}><AboutMe /></S.MiddleView>
+        <S.MiddleView className='view__my_know' ref={myKnowRef}><MyKnowledge /></S.MiddleView>
+        <S.MiddleView className='view__my_projects' ref={myProjectsRef}><MyProjects /></S.MiddleView>
+        <S.LastView className='view__thanks' ref={thanksRef}><Thanks /></S.LastView>
 
       </S.HomeScrollContainer>
 
@@ -84,10 +90,10 @@ const Home = ({ themeToggler, activeView }) => {
       <S.MobileMenu menuOpen={menuOpen}>
         <S.MobileMenuContainer menuOpen={menuOpen}>
           <ul>
-            <li className='home' onClick={() => goToRef(homeRef, 'home')}>Início</li>
-            <li className='about_me' onClick={() => goToRef(aboutMeRef, 'about_me')}>Sobre mim</li>
-            <li className='my_know' onClick={() => goToRef(myKnowRef, 'my_know')}>Meus conhecimentos</li>
-            <li className='my_projects' onClick={() => goToRef(myProjectsRef, 'my_projects')}>Meus projetos</li>
+            <li className='home' onClick={() => goToRef(homeRef, 'home')}>Início<I.FiHome /></li>
+            <li className='about_me' onClick={() => goToRef(aboutMeRef, 'about_me')}>Sobre mim<I.FiSmile /></li>
+            <li className='my_know' onClick={() => goToRef(myKnowRef, 'my_know')}>Meus conhecimentos<I.FiBook /></li>
+            <li className='my_projects' onClick={() => goToRef(myProjectsRef, 'my_projects')}>Meus projetos<I.FiPackage /></li>
           </ul>
         </S.MobileMenuContainer>
       </S.MobileMenu>

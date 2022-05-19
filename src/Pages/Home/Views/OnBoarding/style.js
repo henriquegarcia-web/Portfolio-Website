@@ -11,6 +11,7 @@ export const OnBoarding = styled.div`
 export const OnBoardingContainer = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `
 
 export const PersonalLinks = styled.div`
@@ -29,7 +30,7 @@ export const Link = styled.a`
   cursor: pointer;
   transition: .2s;
 
-  background-color: ${props => props.theme.elements_dark};
+  background-color: ${props => props.theme.body};
 
   svg {
     font-size: 18px;
@@ -56,6 +57,7 @@ export const PersonalDescription = styled.div`
 
   h3 {
     display: flex;
+    flex-wrap: wrap;
     font-size: 46px;
     font-weight: 800;
     padding-left: 10px;
@@ -64,7 +66,6 @@ export const PersonalDescription = styled.div`
     border-left: 4px solid ${props => props.theme.font_color};
 
     div {
-      /* transform: rotate(0); */
       animation: HandRotate 1.5s linear infinite;
       margin: 0 15px;
     }
@@ -72,12 +73,18 @@ export const PersonalDescription = styled.div`
     span {
       margin-left: 15px;
     }
+
+    b {
+      display: flex;
+      font-weight: 800;
+    }
   }
 
   h2 {
     font-size: 22px;
     font-weight: 600;
     padding-left: 10px;
+    line-height: 32px;
 
     border-left: 4px solid ${props => props.theme.font_color};
 
@@ -85,9 +92,38 @@ export const PersonalDescription = styled.div`
       text-decoration: underline;
       cursor: cell;
       transition: 0.15s;
+      margin-left: 1vh;
 
       &:hover {
         color: ${props => props.theme.variant};
+      }
+    }
+
+    b {
+      display: flex;
+      font-weight: 600;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    h3 {
+      font-size: 8vw;
+      font-weight: 800;
+      margin-bottom: 15px;
+      padding-left: 15px;
+      border-left: 3px solid ${props => props.theme.font_color};
+
+      b {
+        margin-right: 100%;
+      }
+    }
+
+    h2 {
+      font-size: 4vw;
+      font-weight: 600;
+
+      u {
+        margin-right: 100%;
       }
     }
   }
@@ -101,11 +137,25 @@ export const OnBoardingInputs = styled.div`
     cursor: pointer;
     transition: .2s;
 
-    background-color: ${props => props.theme.elements_dark};
+    background-color: ${props => props.theme.body};
     color: ${props => props.theme.font_color};
 
     &:hover {
       background-color: ${props => props.theme.elements_light};
+    }
+
+    &:nth-of-type(1) {
+      @media screen and (max-width: 760px) {
+        display: none;
+      }
+    }
+
+    &:nth-of-type(2) {
+      display: none;
+
+      @media screen and (max-width: 760px) {
+        display: block;
+      }
     }
   }
 `

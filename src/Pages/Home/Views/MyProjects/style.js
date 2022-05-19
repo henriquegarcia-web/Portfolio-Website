@@ -79,6 +79,10 @@ export const ProjectTitle = styled.div`
 export const ProjectLinks = styled.div`
   display: flex;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 880px)  {
+    margin-bottom: 10px;
+  }
 `
 
 export const Link = styled.a`
@@ -113,6 +117,10 @@ export const Link = styled.a`
   &:nth-of-type(2) {
     margin-left: 7.5px;
   }
+
+  @media screen and (max-width: 880px)  {
+    font-size: 11px;
+  }
 `
 
 export const ProjectTags = styled.div`
@@ -122,7 +130,13 @@ export const ProjectTags = styled.div`
 
   div {
     padding: 3px 10px;
-    font-size: 12px;
-    margin: 0 6px 6px 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 0 4px 4px 0;
+
+    @media screen and (max-width: 880px)  {
+      font-size: 8px;
+    }
   }
+
 `

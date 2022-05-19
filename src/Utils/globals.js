@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
 
   }
 
+  body {
+    background: ${props => props.theme.body};
+  }
+
   // ------ SCROLL BAR
 
   /* width */

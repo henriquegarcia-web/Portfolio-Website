@@ -13,6 +13,10 @@ export const ThanksContainer = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+  }
 `
 
 export const ThanksText = styled.div`
@@ -29,11 +33,27 @@ export const ThanksText = styled.div`
 
     color: ${props => props.theme.font_color};
     border-right: 4px solid ${props => props.theme.font_color};
+  
+    @media screen and (max-width: 760px) {
+      width: 100%;
+      text-align: center;
+      padding-right: 0;
+      margin: 0 0 20px 0;
+      border: none;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    margin-bottom: 40px;
   }
 `
 
 export const ThanksImage = styled.div`
   width: 50%;
+
+  @media screen and (max-width: 760px) {
+    text-align: center;
+  }
 `
 
 export const Image = styled.img`
@@ -41,6 +61,11 @@ export const Image = styled.img`
   margin-left: 20px;
 
   filter: drop-shadow(0 0 20px ${props => props.theme.elements_dark});
+
+  @media screen and (max-width: 760px) {
+    width: 260px;
+    margin-left: 0;
+  }
 `
 
 // ----------------------------------------- LINKS
@@ -52,6 +77,13 @@ export const PersonalLinks = styled.div`
   padding-right: 15px;
 
   border-right: 4px solid ${props => props.theme.font_color};
+
+  @media screen and (max-width: 760px) {
+    justify-content: center;
+    padding-right: 0;
+    border: none;
+    margin: 0;
+  }
 `
 
 export const Link = styled.a`
