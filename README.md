@@ -2,8 +2,8 @@
 
 > **Versão:** 1.0 </br>
 > **Desenvolvedor:** Henrique P. Garcia </br></br>
-> **Data de Início:** 20 de maio de 2022 </br>
-> **Previsão de Término:** 01 de junho de 2022 </br>
+> **Data de Início:** 16 de maio de 2022 </br>
+> **Data de Término:** 19 de maio de 2022 </br>
 
 [Acesse o site aqui (Ctrl + Click)](https://henriquegarcia.dev.br/)
 
