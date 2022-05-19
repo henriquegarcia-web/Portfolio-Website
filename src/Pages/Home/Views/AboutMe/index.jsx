@@ -2,6 +2,9 @@ import React from 'react'
 import * as G from '../../../../Utils/globals'
 import * as S from './style'
 import * as I from 'react-icons/fi'
+import * as FA from 'react-icons/fa'
+import * as GI from 'react-icons/gi'
+import * as BS from 'react-icons/bs'
 
 const AboutMe = () => {
   return (
@@ -88,9 +91,12 @@ export const HobbiesInfos = () => {
     {icon: <I.FiSmile />, tag: 'Desenvolvimento Pessoal'},
     {icon: <I.FiTrendingUp />, tag: 'Empreendedorismo'},
     {icon: <I.FiCodepen />, tag: 'Metaverso'},
-    {icon: <I.FiDollarSign />, tag: 'Criptomoedas & Investimentos'},
-    {icon: <I.FiMonitor />, tag: 'Jogar e Programar Jogos'},
+    {icon: <BS.BsCurrencyBitcoin />, tag: 'Criptomoedas'},
+    {icon: <I.FiDollarSign />, tag: 'Investimentos'},
+    {icon: <GI.GiSpaceSuit />, tag: 'Jogar e Programar Jogos'},
     {icon: <I.FiTrello />, tag: 'Gestão de Projetos'},
+    {icon: <GI.GiSpaceShuttle />, tag: 'Espaço'},
+    {icon: <GI.GiTechnoHeart />, tag: 'Tecnologia'},
   ]
 
   return (

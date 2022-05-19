@@ -68,7 +68,9 @@ const MyProjects = () => {
       tags: [
         'React',
         'Firebase',
-        'MVP'
+        'MVP',
+        'Blog',
+        'User & Admin System'
       ]
     },
     {
