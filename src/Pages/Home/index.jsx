@@ -13,7 +13,7 @@ import Thanks from './Views/Thanks'
 const Home = ({ themeToggler, activeView }) => {
 
   const [currentView, setCurrentView] = useState('home')
-  const [menuOpen, setMenuOpen] = useState(false)
+  // const [menuOpen, setMenuOpen] = useState(false)
 
   // --------------------------------------------------
 
@@ -49,8 +49,6 @@ const Home = ({ themeToggler, activeView }) => {
       element.style.fontWeight = '700'
     })
   }, [currentView])
-  
-  // on
 
   return (
     <S.Home>
@@ -69,7 +67,7 @@ const Home = ({ themeToggler, activeView }) => {
 
       </S.HomeScrollContainer>
 
-      <S.HomeSettings>
+      {/* <S.HomeSettings>
         <S.Logo>
           <h1>Henrique P. Garcia</h1>
         </S.Logo>
@@ -87,19 +85,19 @@ const Home = ({ themeToggler, activeView }) => {
         <S.ThemeChanger onClick={themeToggler}>
           <I.FiMoon />
         </S.ThemeChanger>
-      </S.HomeSettings>
+      </S.HomeSettings> */}
 
-      <S.MobileMenu menuOpen={menuOpen}>
+      {/* <S.MobileMenu menuOpen={menuOpen}>
         <S.MobileMenuContainer menuOpen={menuOpen}>
           <ul>
             <li className='home' onClick={() => goToRef(homeRef, 'home')}>Início<I.FiHome /></li>
-            {/* <li className='about_me' onClick={() => goToRef(aboutMeRef, 'about_me')}>Sobre mim<I.FiSmile /></li>
+            <li className='about_me' onClick={() => goToRef(aboutMeRef, 'about_me')}>Sobre mim<I.FiSmile /></li>
             <li className='my_know' onClick={() => goToRef(myKnowRef, 'my_know')}>Meus conhecimentos<I.FiBook /></li>
-            <li className='my_projects' onClick={() => goToRef(myProjectsRef, 'my_projects')}>Meus projetos<I.FiPackage /></li> */}
+            <li className='my_projects' onClick={() => goToRef(myProjectsRef, 'my_projects')}>Meus projetos<I.FiPackage /></li> 
             <li className='thanks' onClick={() => goToRef(thanksRef, 'thanks')}>Agrandecimento<I.FiSmile /></li>
           </ul>
         </S.MobileMenuContainer>
-      </S.MobileMenu>
+      </S.MobileMenu> */}
     </S.Home>
   )
 }
