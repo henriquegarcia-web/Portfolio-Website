@@ -2,7 +2,7 @@ import React from 'react'
 import * as S from './style'
 // import * as I from 'react-icons/fa'
 
-const OnBoarding = ({ onBackClick, goToThanks }) => {
+const OnBoarding = () => {
   return (
     <S.OnBoarding>
       
