@@ -72,6 +72,7 @@ export const Button = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: fit-content;
   height: 30px;
   font-size: 15px;
   font-weight: 400;
@@ -85,23 +86,21 @@ export const Button = styled.div`
   }
 `
 
-// export const TextTitle = styled.h2`
-//   margin: 0;
-  // font-size: 24px;
-  // font-weight: 600;
-//   letter-spacing: 0.5px;
+export const Title = styled.h1`
+  margin: 0;
+  font-size: 35px;
+  font-weight: 400;
 
-//   color: ${props => props.theme.font_color};
-// `
+  color: ${props => props.theme.font_color};
+`
 
-// export const TextSubtitle = styled.h3`
-//   margin: 0;
-//   font-size: 18px;
-//   font-weight: 400;
-//   letter-spacing: 0.5px;
+export const Subtitle = styled.h2`
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
 
-//   color: ${props => props.theme.font_color};
-// `
+  color: ${props => props.theme.font_color};
+`
 
 // -------------------------------------- TAG
 

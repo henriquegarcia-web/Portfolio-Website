@@ -2,10 +2,28 @@ import React from 'react'
 import * as S from './style'
 // import * as I from 'react-icons/fa'
 
+import MetaImage from '../../../../Assets/Meta.png'
+
 const OnBoarding = () => {
   return (
     <S.OnBoarding>
-      
+      <S.OnBoardingImage>
+        <S.Image src={MetaImage} alt='' />
+      </S.OnBoardingImage>
+      <S.OnBoardingContent>
+        <S.ContentTitle>
+          Front-end Web & Mobile Developer
+        </S.ContentTitle>
+        <S.ContentSubtitle>
+          Since 2018 coding <b>solutions</b> as a <b>front end developer</b>
+        </S.ContentSubtitle>
+        <S.ContentInputs>
+          <S.InputAboutMe>+ About Me</S.InputAboutMe>
+          <S.LinkMedia href='' target='_blank'></S.LinkMedia>
+          <S.LinkMedia href='' target='_blank'></S.LinkMedia>
+          <S.LinkMedia href='' target='_blank'></S.LinkMedia>
+        </S.ContentInputs>
+      </S.OnBoardingContent>
     </S.OnBoarding>
   )
 }
