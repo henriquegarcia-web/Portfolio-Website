@@ -1,26 +1,26 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    font-family: 'Roboto', sans-serif;
-    /* font-family: 'Lexend Deca', sans-serif; */
-    text-decoration: none;
-    flex-shrink: 0;
-    user-select: none;
-    transition: .2s;
-  }
-
-  :root {
-
-  }
-
   body {
     background: ${props => props.theme.body};
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+      /* font-family: 'Roboto', sans-serif; */
+      font-family: 'Lexend Deca', sans-serif;
+      text-decoration: none;
+      list-style: none;
+      flex-shrink: 0;
+      user-select: none;
+      transition: .2s;
+      letter-spacing: 0.5px;
+
+      color: ${props => props.theme.font_color};
+    }
   }
 
   // ------ SCROLL BAR
@@ -63,10 +63,27 @@ export const Page = styled.div`
   /* border: 2px solid red; */
 `
 
+export const Button = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 50px;
+  cursor: pointer;
+
+  background: ${props => props.theme.primary};
+
+  &:hover {
+    background: ${props => props.theme.secondary};
+  }
+`
+
 // export const TextTitle = styled.h2`
 //   margin: 0;
-//   font-size: 24px;
-//   font-weight: 600;
+  // font-size: 24px;
+  // font-weight: 600;
 //   letter-spacing: 0.5px;
 
 //   color: ${props => props.theme.font_color};

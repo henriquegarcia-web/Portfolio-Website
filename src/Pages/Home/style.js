@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Page } from '../../Utils/globals'
 
 export const Home = styled.div`
-
+  
 `
 
 export const HomeScrollContainer = styled.div`

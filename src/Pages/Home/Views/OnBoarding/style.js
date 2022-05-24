@@ -6,4 +6,6 @@ export const OnBoarding = styled.div`
   width: 100%;
   max-width: 1000px;
   height: 100%;
+
+  border: 1px solid orange;
 `

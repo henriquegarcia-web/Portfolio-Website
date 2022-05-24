@@ -1,14 +1,15 @@
 export const darkTheme = {
-  body: 'rgba(36, 40, 46, 1)',
+  body: 'rgba(27, 31, 36, 1)',
 
-  primary: 'rgba(57, 61, 66, 1)',
-  secondary: 'rgba(30, 34, 37, 1)',
+  primary: 'rgba(40, 46, 54, 1)',
+  secondary: 'rgba(49, 56, 66, 1)',
 
-  variant: 'rgba(247, 168, 49, 1)',
+  variant: 'rgba(246, 167, 14, 1)',
   degrade: '',
 
   font_color: 'rgba(240, 240, 240, 1)',
-  font_color_variant: 'rgba(240, 240, 240, 1)',
+  font_color_variant: 'rgba(230, 230, 230, 1)',
 
-  border: '',
+  border: 'rgba(50, 50, 50, 1)',
+  hover: 'rgba(31, 35, 41, 1)',   //33, 37, 43   //35, 39, 46
 }
