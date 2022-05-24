@@ -16,21 +16,7 @@ export const HomeScrollContainer = styled.div`
   height: 100%;
 `
 
-export const FirstView = styled(Page)`
-  height: 100%;
-  min-height: 100%;
-`
-
-export const MiddleView = styled(Page)`
-  height: 100%;
-  min-height: 100%;
-
-  /* &:nth-of-type(2), &:nth-of-type(4) {
-    background-color: ${props => props.theme.body_variant};
-  } */
-`
-
-export const LastView = styled(Page)`
+export const View = styled(Page)`
   height: 100%;
   min-height: 100%;
 `

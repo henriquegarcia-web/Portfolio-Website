@@ -47,11 +47,11 @@ const Home = () => {
     <S.Home>
       <S.HomeScrollContainer ref={container}>
 
-        <S.FirstView ref={onBoardingRef}><OnBoarding /></S.FirstView>
-        <S.MiddleView ref={aboutMeRef}><AboutMe /></S.MiddleView>
-        <S.MiddleView ref={mySkillsRef}><MySkills /></S.MiddleView>
-        <S.MiddleView ref={myProjectsRef}><MyProjects /></S.MiddleView>
-        <S.LastView ref={thanksRef}><Thanks /></S.LastView>
+        <S.View ref={onBoardingRef}><OnBoarding /></S.View>
+        <S.View ref={aboutMeRef}><AboutMe /></S.View>
+        <S.View ref={mySkillsRef}><MySkills /></S.View>
+        <S.View ref={myProjectsRef}><MyProjects /></S.View>
+        <S.View ref={thanksRef}><Thanks /></S.View>
 
       </S.HomeScrollContainer>
     </S.Home>

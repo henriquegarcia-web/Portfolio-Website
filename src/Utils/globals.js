@@ -35,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
   /* Track */
   ::-webkit-scrollbar-track {
     /* background: ${props => props.theme.elements_light}; */
+    background-color: gray;
     border-radius: 10px;
   }
 
@@ -59,7 +60,7 @@ export const Page = styled.div`
   box-sizing: border-box;
   color: #000;
 
-  border: 2px solid red;
+  /* border: 2px solid red; */
 `
 
 // export const TextTitle = styled.h2`
