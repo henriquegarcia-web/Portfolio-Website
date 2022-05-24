@@ -1,11 +1,10 @@
 import styled from "styled-components";
+import { ViewContainer } from "../../../../Utils/globals";
 
-export const OnBoarding = styled.div`
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 1000px;
-  height: 100%;
-
+export const OnBoarding = styled(ViewContainer)`
   border: 1px solid orange;
 `
+
+// export const OnBoarding = styled.div`
+//   border: 1px solid orange;
+// `

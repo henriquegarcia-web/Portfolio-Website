@@ -56,11 +56,16 @@ export const Page = styled.div`
   align-items: center;
   position: relative;
   width: 100%;
-  padding: 20px;
+  padding: 70px 20px 20px 20px;
   box-sizing: border-box;
   color: #000;
+`
 
-  /* border: 2px solid red; */
+export const ViewContainer = styled.div`
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
 `
 
 export const Button = styled.div`
