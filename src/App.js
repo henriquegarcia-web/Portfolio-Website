@@ -5,16 +5,12 @@ import { ThemeProvider } from 'styled-components';
 import { darkTheme } from './Utils/theme'
 
 import Home from './Pages/Home';
-import Header from './Components/Header';
 
 function App() {
 
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
-
-      <Header />
-
       <Router>
         <Routes>
 

@@ -10,6 +10,7 @@ export const Header = styled.div`
   width: 100%;
   height: 50px;
   padding: 0 20px;
+  user-select: none;
 
   background: ${props => props.theme.body};
   border-bottom: 1px solid ${props => props.theme.border};
@@ -78,6 +79,7 @@ export const InputLanguage = styled(Button)`
   margin-left: 8px;
   font-size: 14px;
   border-radius: 6px;
+  cursor: default;
 
   svg {
     font-size: 18px;

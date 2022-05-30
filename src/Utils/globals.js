@@ -1,9 +1,41 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+
+  @-webkit-keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   body {
-    background: ${props => props.theme.body};
+    /* background: ${props => props.theme.body}; */
     
+    background: linear-gradient(-45deg, #22056f, #521cba, #dca07b, #b92437, #330a2c);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+    backdrop-filter: blur(100px);
+
+    height: 100vh;
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -15,12 +47,16 @@ const GlobalStyle = createGlobalStyle`
       text-decoration: none;
       list-style: none;
       flex-shrink: 0;
-      user-select: none;
+      /* user-select: none; */
       transition: .2s;
       letter-spacing: 0.5px;
 
       color: ${props => props.theme.font_color};
     }
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   // ------ SCROLL BAR
@@ -86,8 +122,8 @@ export const Button = styled.div`
 `
 
 export const Title = styled.h1`
-  font-size: 35px;
-  font-weight: 400;
+  font-size: 36px;
+  font-weight: 500;
 `
 
 export const Subtitle = styled.h2`
@@ -100,13 +136,13 @@ export const Subtitle = styled.h2`
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 `
 
 export const SectionTitle = styled.h3`
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 `
 
 export const LeftContainer = styled.div`

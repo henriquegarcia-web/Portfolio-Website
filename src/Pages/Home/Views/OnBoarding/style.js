@@ -13,8 +13,9 @@ export const OnBoardingImage = styled.div`
 `
 
 export const Image = styled.img`
-  width: 150%;
-  transform: translate(60px, 20px);
+  width: 160%;
+  transform: translate(80px, 20px);
+  pointer-events: none;
 `
 
 export const OnBoardingContent = styled.div`
@@ -25,11 +26,19 @@ export const OnBoardingContent = styled.div`
 `
 
 export const ContentTitle = styled(Title)`
-  margin-bottom: 15px;
+  font-size: 44px;
+  font-weight: 300;
+  margin-bottom: 14px;
+
+  b {
+    font-weight: 600;
+  }
 `
 
 export const ContentSubtitle = styled(Subtitle)`
-  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 60px;
 
   b {
     font-weight: 500;
@@ -58,11 +67,15 @@ export const LinkMedia = styled.a`
 
   background: ${props => props.theme.primary};
 
-  &:hover {
-    background: ${props => props.theme.secondary};
+  svg {
+    font-size: 16px;
   }
 
-  svg {
-    font-size: 20px;
+  &:hover {
+    background: ${props => props.theme.secondary};
+
+    svg {
+      transform: scale(1.2);
+    }
   }
 `
