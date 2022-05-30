@@ -1,12 +1,7 @@
 import styled from "styled-components";
+import { ViewContainer } from "../../../../Utils/globals";
 
-export const MyKnowledge = styled.div`
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  width: 100%;
-  max-width: 1000px;
-  height: 100%;
-
+export const MyKnowledge = styled(ViewContainer)`
+  padding-top: 60px;
   /* border: 2px solid red; */
 `

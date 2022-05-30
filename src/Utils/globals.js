@@ -58,7 +58,6 @@ export const Page = styled.div`
   width: 100%;
   padding: 70px 20px 20px 20px;
   box-sizing: border-box;
-  color: #000;
 `
 
 export const ViewContainer = styled.div`
@@ -87,44 +86,71 @@ export const Button = styled.div`
 `
 
 export const Title = styled.h1`
-  margin: 0;
   font-size: 35px;
   font-weight: 400;
-
-  color: ${props => props.theme.font_color};
 `
 
 export const Subtitle = styled.h2`
-  margin: 0;
   font-size: 20px;
   font-weight: 300;
+`
 
-  color: ${props => props.theme.font_color};
+// -------------------------------------- VIEWS SECTIONS
+
+export const Section = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+`
+
+export const SectionTitle = styled.h3`
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+`
+
+export const LeftContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: ${props => props.width}%;
+  height: 100%;
+  padding-right: 25px;
+
+  border: 2px solid red;
+`
+
+export const RightContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: ${props => props.width}%;
+  height: 100%;
+  padding-left: 25px;
+
+  border: 2px solid orange;
 `
 
 // -------------------------------------- TAG
 
-// export const Tag = styled.div`
-//   display: flex;
-//   align-items: center;
-//   font-size: 13px;
-//   font-weight: 400;
-//   letter-spacing: 0.5px;
-//   padding: 5px 14px;
-//   border-radius: 50px;
-//   margin: 0 8px 8px 0;
-//   cursor: cell;
-//   transition: .2s;
+export const Tag = styled.div`
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5px 14px;
+  border-radius: 50px;
+  margin: 0 10px 10px 0;
+  cursor: cell;
 
-//   background-color: ${props => props.theme.elements_dark};
-//   color: ${props => props.theme.font_color};
+  background-color: ${props => props.theme.primary};
+  color: ${props => props.theme.font_color};
 
-//   svg {
-//     margin-right: 6px;
-//     font-size: 15px;
-//   }
+  svg {
+    margin-right: 6px;
+    font-size: 15px;
+  }
 
-//   &:hover {
-//     background-color: ${props => props.theme.elements_light};
-//   }
-// `
+  &:hover {
+    background-color: ${props => props.theme.secondary};
+  }
+`

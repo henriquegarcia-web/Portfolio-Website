@@ -8,7 +8,7 @@ export const darkTheme = {
   degrade: '',
 
   font_color: 'rgba(240, 240, 240, 1)',
-  font_color_variant: 'rgba(230, 230, 230, 1)',
+  font_color_variant: 'rgba(150, 150, 150, 1)',
 
   border: 'rgba(50, 50, 50, 1)',
   hover: 'rgba(31, 35, 41, 1)',   //33, 37, 43   //35, 39, 46

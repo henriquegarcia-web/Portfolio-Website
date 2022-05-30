@@ -2,14 +2,14 @@ import styled from "styled-components";
 import { Page } from '../../Utils/globals'
 
 export const Home = styled.div`
-  
+
 `
 
 export const HomeScrollContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   position: absolute;
-  overflow: auto;
+  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;

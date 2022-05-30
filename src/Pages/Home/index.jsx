@@ -21,7 +21,7 @@ const Home = () => {
   const bindScrollSnap = () => {
     const element = container.current
     createScrollSnap(element, {
-      snapDestinationY: '100%',
+      snapDestinationX: '100%',
     }, () => {})
   }
 

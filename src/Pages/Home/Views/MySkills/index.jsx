@@ -6,7 +6,20 @@ import * as S from './style'
 const MySkills = () => {
   return (
     <S.MyKnowledge>
-      
+      <G.LeftContainer width='45'>
+        <G.Section>
+          <G.SectionTitle>MAIN SKILLS</G.SectionTitle>
+        </G.Section>
+      </G.LeftContainer>
+      <G.RightContainer width='55'>
+        <G.Section>
+          <G.SectionTitle>INTERMEDIATE SKILLS</G.SectionTitle>
+        </G.Section>
+
+        <G.Section> 
+          <G.SectionTitle>LEARNING SKILLS</G.SectionTitle>
+        </G.Section>
+      </G.RightContainer>
     </S.MyKnowledge>
   )
 }

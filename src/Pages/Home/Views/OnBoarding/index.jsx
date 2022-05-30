@@ -15,7 +15,7 @@ const OnBoarding = () => {
           Front-end Web & Mobile Developer
         </S.ContentTitle>
         <S.ContentSubtitle>
-          Since 2018 coding <b>solutions</b> as a <b>front end developer</b>
+          Since 2018 coding <b>solutions</b> as a <b>developer</b>
         </S.ContentSubtitle>
         <S.ContentInputs>
           <S.InputAboutMe>+ About Me</S.InputAboutMe>
