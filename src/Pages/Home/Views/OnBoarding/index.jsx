@@ -19,9 +19,9 @@ const OnBoarding = ({ toogleAboutMe }) => {
         </S.ContentSubtitle>
         <S.ContentInputs>
           <S.InputAboutMe onClick={toogleAboutMe}>+ About Me</S.InputAboutMe>
-          <S.LinkMedia href='www.linkedin.com/in/henrique-p-garcia/' target='_blank'><I.FaLinkedinIn /></S.LinkMedia>
-          <S.LinkMedia href='www.behance.net/henriquegarcia-dev' target='_blank'><I.FaBehance /></S.LinkMedia>
-          <S.LinkMedia href='github.com/henriquegarcia-web' target='_blank'><I.FaGithub /></S.LinkMedia>
+          <S.LinkMedia href='https://www.linkedin.com/in/henrique-p-garcia/' target='_blank'><I.FaLinkedinIn /></S.LinkMedia>
+          <S.LinkMedia href='https://www.behance.net/henriquegarcia-dev' target='_blank'><I.FaBehance /></S.LinkMedia>
+          <S.LinkMedia href='https://github.com/henriquegarcia-web' target='_blank'><I.FaGithub /></S.LinkMedia>
         </S.ContentInputs>
       </S.OnBoardingContent>
     </S.OnBoarding>
