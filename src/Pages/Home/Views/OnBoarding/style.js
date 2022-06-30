@@ -6,15 +6,21 @@ export const OnBoarding = styled(ViewContainer)`
 `
 
 export const OnBoardingImage = styled.div`
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 50%;
+  width: 40%;
+  height: 100%;
 `
 
 export const Image = styled.img`
-  width: 160%;
-  transform: translate(80px, 20px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200%;
+  max-width: 850px;
+  transform: translate(-140px, 20px);
   pointer-events: none;
 `
 
@@ -22,11 +28,15 @@ export const OnBoardingContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 60%;
+`
+
+export const ContentAbsolute = styled.div`
+  position: absolute;
 `
 
 export const ContentTitle = styled(Title)`
-  font-size: 44px;
+  font-size: 50px;
   font-weight: 300;
   margin-bottom: 14px;
 

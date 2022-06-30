@@ -39,30 +39,30 @@ const Home = () => {
             <S.AboutMeHeader>aboutMe</S.AboutMeHeader>          
 
             <G.Section>
-              <G.SectionTitle>RESUME</G.SectionTitle>
+              <G.SectionTitle>RESUMO</G.SectionTitle>
               <S.ResumeText>
-                I wrote my first code in 2018 programming games with C# in Unity3D. I started looking for new solutions and technologies and then I found the front end. Since then, I have been constantly evolving, seeking to always be up to date and in line with trends in the area. I have a real passion for programming and its possibilities. <br/><br/>
-                Software is one of the main keys to the digital environment. Currently, I'm learning to program new languages ​​and looking to work with the most modern technologies that are suitable for Full-Stack development.
+                Escrevi meu primeiro código com programação de jogos em 2018, com C# na Unity3D. Comecei a procurar novas soluções e tecnologias e encontrei o front-end. Desde então, venho em constante evolução, buscando estar sempre atualizado e alinhado com as tendências da área. Eu tenho uma verdadeira paixão por programação e suas possibilidades. <br/><br/>
+                O software é uma das principais chaves para o ambiente digital. Atualmente, estou me dedicando à minha especialização no front-end e pretendo seguir carreira no gerenciamento de projetos, como PO ou SM.
               </S.ResumeText>
             </G.Section>
 
             <G.Section>
-              <G.SectionTitle>CONTACT INFO</G.SectionTitle>
+              <G.SectionTitle>INFORMAÇÕES DE CONTATO</G.SectionTitle>
               <S.ContactInfoContainer>
 
                 <S.MainInfosContainer>
                   <S.PersonalImage><S.Image src={PersonalImage} alt='' /></S.PersonalImage>
                   <S.PersonalInfos>
                     <S.Name>Henrique Pereira Garcia</S.Name>
-                    <S.Post>Front-end Developer</S.Post>
+                    <S.Post>Desenvolvedor Front-end</S.Post>
                     <AgeComponent />
                   </S.PersonalInfos>
                 </S.MainInfosContainer>
 
                 <S.ContactInfosContainer>
                   <S.ContactInfo><b>E-mail</b><p>henriquegarcia.dev@gmail.com</p></S.ContactInfo>
-                  <S.ContactInfo><b>Phone</b><p>(51) 9 9307-7788</p></S.ContactInfo>
-                  <S.ContactInfo><b>Location</b><p>Canoas, RS</p></S.ContactInfo>
+                  <S.ContactInfo><b>Telefone</b><p>(51) 9 9307-7788</p></S.ContactInfo>
+                  <S.ContactInfo><b>Localização</b><p>Canoas, RS</p></S.ContactInfo>
                   <S.ContactInfo>
                     <b>Linkedin</b>
                     <p><a 

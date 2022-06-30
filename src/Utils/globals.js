@@ -28,10 +28,15 @@ const GlobalStyle = createGlobalStyle`
   body {
     /* background: ${props => props.theme.body}; */
     
+    background:
+    linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
     background: linear-gradient(-45deg, #22056f, #521cba, #dca07b, #b92437, #330a2c);
-    background-size: 400% 400%;
-    -webkit-animation: gradient 15s ease infinite;
-	        animation: gradient 15s ease infinite;
+    background-size: 100% 100%;
+    /* -webkit-animation: gradient 20s ease infinite;
+	        animation: gradient 20s ease infinite; */
     backdrop-filter: blur(100px);
 
     height: 100vh;

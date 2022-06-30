@@ -11,18 +11,20 @@ const OnBoarding = ({ toogleAboutMe }) => {
         <S.Image src={MetaImage} alt='' />
       </S.OnBoardingImage>
       <S.OnBoardingContent>
-        <S.ContentTitle>
-          <b>Front-end</b> Developer
-        </S.ContentTitle>
-        <S.ContentSubtitle>
-          Since 2018 <b>coding solutions</b> as a <b>developer</b>
-        </S.ContentSubtitle>
-        <S.ContentInputs>
-          <S.InputAboutMe onClick={toogleAboutMe}>+ About Me</S.InputAboutMe>
-          <S.LinkMedia href='https://www.linkedin.com/in/henrique-p-garcia/' target='_blank'><I.FaLinkedinIn /></S.LinkMedia>
-          <S.LinkMedia href='https://www.behance.net/henriquegarcia-dev' target='_blank'><I.FaBehance /></S.LinkMedia>
-          <S.LinkMedia href='https://github.com/henriquegarcia-web' target='_blank'><I.FaGithub /></S.LinkMedia>
-        </S.ContentInputs>
+        <S.ContentAbsolute>
+          <S.ContentTitle>
+            <b>Front-end</b> Developer
+          </S.ContentTitle>
+          <S.ContentSubtitle>
+            Desde 2018 <b>condificando soluções</b> como <b>desenvolvedor</b>
+          </S.ContentSubtitle>
+          <S.ContentInputs>
+            <S.InputAboutMe onClick={toogleAboutMe}>+ Sobre mim</S.InputAboutMe>
+            <S.LinkMedia href='https://www.linkedin.com/in/henrique-p-garcia/' target='_blank'><I.FaLinkedinIn /></S.LinkMedia>
+            <S.LinkMedia href='https://www.behance.net/henriquegarcia-dev' target='_blank'><I.FaBehance /></S.LinkMedia>
+            <S.LinkMedia href='https://github.com/henriquegarcia-web' target='_blank'><I.FaGithub /></S.LinkMedia>
+          </S.ContentInputs>
+        </S.ContentAbsolute>
       </S.OnBoardingContent>
     </S.OnBoarding>
   )
